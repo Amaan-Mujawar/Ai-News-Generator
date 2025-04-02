@@ -1,0 +1,108 @@
+/* Background Styling */
+body {
+    background: url('https://source.unsplash.com/1600x900/?news,media,technology') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Glassmorphism Card */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure H2 Text is Visible */
+.title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000000; /* Explicitly setting color to white for visibility */
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Field */
+input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-generate { background: #28a745; color: white; }
+.btn-clear { background: #dc3545; color: white; }
+.btn-clear-result { background: #ffc107; color: black; }
+.btn-copy { background: #007bff; color: white; }
+.btn-refresh { background: #17a2b8; color: white; } /* Added Refresh Button Style */
+
+.btn:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input {
+        width: 100%;
+    }
+}

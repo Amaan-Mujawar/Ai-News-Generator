@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">AI News Generator 📰</h2>
+        <input id="input" type="text" placeholder="Enter topic for news">
+        <br>
+        <button class="btn btn-generate" onclick="getNews()">Generate News</button>
+        <button class="btn btn-clear" onclick="clearInput()">Clear Input</button>
+        <button class="btn btn-clear-result" onclick="clearResult()">Clear Result</button>
+        <button class="btn btn-copy" onclick="copyNews()">Copy News</button>
+        <button class="btn btn-refresh" onclick="refreshPage()">Refresh</button> <!-- Refresh Button -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
